@@ -1,0 +1,11 @@
+*.pem
+*.ppk
+*.key
+.aws/
+credentials
+.env
+__pycache__/
+*.py[cod]
+telemetry.tmp
+.DS_Store
+Thumbs.db
