@@ -1,0 +1,38 @@
+{
+  "eventVersion": "1.09",
+  "userIdentity": {
+    "type": "Root",
+    "principalId": "<AWS_ACCOUNT_ID>",
+    "arn": "arn:aws:iam::<AWS_ACCOUNT_ID>:root",
+    "accountId": "<AWS_ACCOUNT_ID>"
+  },
+  "eventTime": "2026-11-19T15:14:42Z",
+  "eventSource": "monitoring.amazonaws.com",
+  "eventName": "PutDashboard",
+  "awsRegion": "us-east-1",
+  "sourceIPAddress": "<REDACTED_IP>",
+  "requestParameters": {
+    "dashboardName": "CloudPulse-Operations-Dashboard"
+  },
+  "responseElements": {
+    "dashboardValidationMessages": []
+  },
+  "requestID": "6cb575c4-2e9e-489d-94e0-38367cbeacb8",
+  "eventID": "bbfb91a3-9e0c-4fe8-95a0-0e37ada5029b",
+  "readOnly": false,
+  "resources": [
+    {
+      "type": "AWS::CloudWatch::Metric"
+    }
+  ],
+  "eventType": "AwsApiCall",
+  "managementEvent": true,
+  "recipientAccountId": "<AWS_ACCOUNT_ID>",
+  "eventCategory": "Management",
+  "tlsDetails": {
+    "tlsVersion": "TLSv1.3",
+    "cipherSuite": "TLS_AES_128_GCM_SHA256",
+    "clientProvidedHostHeader": "monitoring.us-east-1.amazonaws.com"
+  },
+  "sessionCredentialFromConsole": "true"
+}
