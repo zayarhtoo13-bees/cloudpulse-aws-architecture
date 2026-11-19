@@ -1,5 +1,5 @@
 -- Lab 6: CloudPulse RDS MySQL Inventory Verification Script
--- Executed from EC2 (zayartesting1) over Private VPC Security Group Chaining
+-- Verified from EC2 (zayartesting1 / 172.31.18.15) via Security Group Chaining
 
 CREATE DATABASE IF NOT EXISTS cloudpulse_inventory;
 USE cloudpulse_inventory;

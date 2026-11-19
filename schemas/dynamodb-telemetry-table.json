@@ -1,0 +1,44 @@
+{
+  "TableName": "CloudPulse-Telemetry",
+  "BillingMode": "PAY_PER_REQUEST",
+  "KeySchema": [
+    {
+      "AttributeName": "InstanceID",
+      "KeyType": "HASH"
+    },
+    {
+      "AttributeName": "Timestamp",
+      "KeyType": "RANGE"
+    }
+  ],
+  "AttributeDefinitions": [
+    {
+      "AttributeName": "InstanceID",
+      "AttributeType": "S"
+    },
+    {
+      "AttributeName": "Timestamp",
+      "AttributeType": "S"
+    }
+  ],
+  "TimeToLiveSpecification": {
+    "Enabled": true,
+    "AttributeName": "ExpireAt"
+  },
+  "SampleItems": [
+    {
+      "InstanceID": { "S": "i-web-01" },
+      "Timestamp": { "S": "2026-11-19T10:00:00Z" },
+      "CPUUtilization": { "N": "24.5" },
+      "Status": { "S": "Healthy" },
+      "ExpireAt": { "N": "1797638400" }
+    },
+    {
+      "InstanceID": { "S": "i-web-01" },
+      "Timestamp": { "S": "2026-11-19T10:05:00Z" },
+      "CPUUtilization": { "N": "91.2" },
+      "AlertMessage": { "S": "High CPU spike" },
+      "ExpireAt": { "N": "1797638700" }
+    }
+  ]
+}
